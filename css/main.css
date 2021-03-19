@@ -42,9 +42,10 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid white;
     margin: 1em 0;
-    padding: 0;
+    padding: 0px;
+    width: 100%;
 }
 
 /*
@@ -102,25 +103,35 @@ html {
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "lora", sans-serif;
   padding: 0 2em;
-  font-size: 1.25em;
+  font-size: 1.1em;
   height: 100%;
   color: #fff;
+  background-color: slategrey;
+}
+
+span {
+    font-family: "dancing script";
+}
+header {
+    font-size: 3rem;
 }
 
 header,
 footer {
-  background-color: #222;
+  background-color: slategrey;
   height: 80px;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
 
 main {
-  background-color: #ccc;
+  font-family: "lora", sans-serif;
+  font-size: 2.5rem;
+  background-color:slategrey;
   height: 250px;
   width: 100%;
   justify-content: center;
@@ -130,7 +141,6 @@ main {
 header,
 footer,
 main {
-
 }
 
 .flex-container {
@@ -143,13 +153,50 @@ main {
 .flex-items {
   color: #fff;
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
+  font-size: 1.4em;
+  background-color: slategrey;
   width: 30%;
   height: 200px;
   display:flex;
   justify-content: center;
   align-items: center;
+}
+
+#div-1 #div-2 #div-3 {
+}
+
+#div-1 {
+    border-right: 1px solid white;
+}
+
+#div-2 {
+    border-right: 1px solid white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 20px;
+    height: 75%;
+    width:15%;
+    background-color:white;
+    padding:0px;
+    margin:0px;
+}
+li {
+    margin:0px;
+    margin-left: 7.5%;
+    padding:0px;
+    float: left;
+    margin:none;
+    
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
 }
 
 /* ==========================================================================
